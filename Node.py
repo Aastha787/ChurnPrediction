@@ -12,3 +12,6 @@ class Node:
         #constructor for leaf nodes
     def is_leaf(self):
         return self.value is not None
+    
+
+    
