@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking css-->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Prediction Form</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="navbar1">
+            <img src="/static/images/logo.png" class="logo">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/policy">About Us</a></li>
+                <li><a href="/table">Let's Predict</a></li>
+            </ul>
+        </div>   
+         <header>Prediction Form</header>
+        <form name="myForm" action="/table" method="post">
+            <div class="form first">
+            <div class="details">
+                <span class="title"> Customer Details </span>
+                <div class="fields">
+                <div class="input-field">
+                    <input type="number"id="age" name="age" placeholder="Enter Age" max="70" min="12" required>
+
+                </div>
+                <div class="input-field">
+                    <input type="number" id="last_login" name="last_login" placeholder="Days Since Last Login"  min="0" required>
+                </div>
+            
+                <div class="input-field">
+                     <input type="number" id="avg_time"name="avg_time" placeholder="Average Time Spent" step="0.01" min="0.01" required>
+                </div>
+
+                <div class="input-field">
+                    <input type="number" id="avg_tran" name="avg_tran" placeholder="Average Transaction Value" step="0.01" min="0.01" required>
+               </div>
+
+              <div class="input-field">
+                    <label>Enter join Date</label>
+                    <input type="date" id="date" name="date" placeholder=" "   min="1980-01-01" required>
+               </div>
+               
+               <div class="input-field">
+                   <label>Enter Last Login Time</label>
+                   <input type="time" id="time" name="time" placeholder="" required>
+               </div>
+
+               <div class="input-field" >
+                <input type="number" id="points" name="points" placeholder="Points in Wallet" step="0.01" min="0.01" required>
+           </div>
+           
+            </div>
+            
+        </div>
+
+
+        <!--Select options-->
+        <div class="form second">
+        <div class="details Id">
+            <span class="title">Select Choices</span>
+            <div class="fields">
+            <div class="input-field">
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected hidden>--Select Gender--</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="Unknown">Unknown</option>
+n                </select>
+             </div>
+            <div class="input-field">
+                <select name="region" id="region" required>
+                    <option value="" disabled selected hidden>--Select Region--</option>
+                    <option value="Town">Town</option>
+                    <option value="City">City</option>
+                    <option value="Village">Village</option>
+                </select>
+            </div>
+        
+            <div class="input-field">
+                <select name="membership" id="membership" required>
+                    <option value="" disabled selected hidden>--Select Membership Category--</option>
+                    <option value="No Membership">No Membership</option>
+                    <option value="Platinium Membership">Platinium Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                    <option value="Premium Membership">Premium Membership</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <select name="refer" id="refer" required>
+                    <option value="" disabled selected hidden>--Joined Through Referral?--</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                 </select>
+           </div>
+           
+           <div class="input-field">
+            <select name="offer" id="offer" required>
+                <option value="" disabled selected hidden>--Select Preffered Offer Types--</option>
+                <option value="Gift Vouchers/Coupons">Gift Vouchers/Coupun</option>
+                 <option value="Without Offers">Without Offers</option>
+            </select>
+           </div>
+           
+           <div class="input-field">
+            <select name="operation" id="operation" required>
+                <option value="" disabled selected hidden>--Select Medium Of Operation--</option>
+                <option value="Desktop">Desktop</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Both">Both</option>
+            </select>
+           </div>
+
+           <div class="input-field">
+            <select name="internet" id="internet" required>
+                <option value="" disabled selected hidden>--Select Internet Option--</option>
+                <option value="Wi-Fi">WiFi</option>
+                <option value="Mobile Data">Mobile Data</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select name="discount" id="discount" required>
+                <option value="" disabled selected hidden>--Used Special Discount?--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select name="preference" id="preference" required>
+                <option value="" disabled selected hidden>--Offer Application Preference?--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select name="complain" id="complain" required>
+                <option value="" disabled selected hidden>--Past Complaint?--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select name="feedback" id="feedback" required>
+                <option value="" disabled selected hidden>--Select Feedback--</option>
+                <option value="Poor Product Quality">Poor Product Quality</option>
+                <option value="Poor Website">Poor Website</option>
+                <option value="Poor Customer Service">Poor Customer Service</option>
+                <option value="Reasonable Price">Reasonable Price</option>
+                <option value="User Friendly Website">User Friendly Website</option>
+                <option value="Products always in Stock">Products Always in Stock</option>
+                <option value="Quality Customer Care">Quality Customer Care</option>
+
+            </select>
+           </div>
+        </div>   
+        <button type="submit" href="/Customer Churn.ipynb" class="btn btn-primary">PREDICT</button>    
+        </div>
+    </div>
+         </form>
+    </div>
+    <script>
+        const maxDate = new Date(); // Today's date
+        maxDate.setDate(maxDate.getDate());  
+        const formattedMaxDate = maxDate.toISOString().split("T")[0];  
+        document.getElementById("date").setAttribute("max", formattedMaxDate); 
+
+        //kjdh
+       
+    // Get the current date
+    const currentDate = new Date();
+    
+    // Get the Joining Date input field
+    const joinDateInput = document.getElementById('date');
+    
+    // Get the Days Since Last Login input field
+    const lastLoginInput = document.getElementById('last_login');
+    
+    // Add an event listener to the Joining Date input field to calculate the Days Since Last Login value
+    joinDateInput.addEventListener('input', function() {
+        // Convert the Joining Date to a Date object
+        const joinDate = new Date(joinDateInput.value);
+        
+        // Calculate the difference in days
+        const differenceInTime = currentDate.getTime() - joinDate.getTime();
+        const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
+        
+        // Set the maximum value for the Days Since Last Login input field
+        lastLoginInput.setAttribute('max', differenceInDays);
+
+    });
+    // Add an event listener to the form to validate the Days Since Last Login input field
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        // Get the Joining Date value
+        const joinDate = new Date(joinDateInput.value);
+        
+        // Get the Days Since Last Login value
+        const lastLogin = parseInt(lastLoginInput.value);
+        
+        // Calculate the difference in days
+        const differenceInTime = currentDate.getTime() - joinDate.getTime();
+        const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
+        
+        // Validate the Days Since Last Login value
+        if (lastLogin > differenceInDays) {
+            alert('Days Since Last Login cannot be greater than the number of days since joining!');
+            event.preventDefault();
+        }
+    });
+ 
+
+      </script>
+</body>
+</html>
